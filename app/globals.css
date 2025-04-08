@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin 'tailwindcss-animate';
 
@@ -178,4 +178,14 @@
   @media (width >= 1400px) {
     max-width: 1400px;
   }
+}
+
+/* to stop global css from overriding */
+svg {
+  width: auto !important;
+  height: auto !important;
+}
+.lucide {
+  width: inherit !important;
+  height: inherit !important;
 }
